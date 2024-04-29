@@ -17,7 +17,7 @@ body {
 
 .animated-text {
     color: #AA336A; /* Pink text color */
-    font-family: 'Comic Sans MS', 'Chalkboard', cursive; /* Playful font */
+    font-family: 'Comic Sans MS', 'Chalkboard'; /* Playful font */
     font-size: 3em; /* Large font size */
     animation: bounceText 1s infinite alternate; /* Animation properties */
     margin-left: 0px;
