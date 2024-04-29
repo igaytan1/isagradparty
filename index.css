@@ -1,4 +1,4 @@
-body{ 
+body { 
     background-image: url('borboletas-butterfly\ \(2\).gif');
     background-size: cover; /* Cover the entire viewport */
     background-position: center; /* Center the background image */
@@ -11,14 +11,13 @@ body{
 #container {
     display: flex;
     align-items: center; /* Vertically center items */
-    justify-content: center; /*Distribute items evenly along the main axis*/
+    justify-content: center; /* Distribute items evenly along the main axis */
     height: 100vh;
 }
 
-
 .animated-text {
-    color:#AA336A; /* Pink text color */
-    font-family: 'Comic Sans MS', cursive; /* Playful font */
+    color: #AA336A; /* Pink text color */
+    font-family: 'Comic Sans MS', 'Chalkboard', cursive; /* Playful font */
     font-size: 3em; /* Large font size */
     animation: bounceText 1s infinite alternate; /* Animation properties */
     margin-left: 0px;
@@ -38,19 +37,19 @@ body{
 .gif {
     max-width: 100%;
     height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 5%; /* Adjust margin for responsiveness */
 }
 
 #yayButton,
 #noButton {
-    padding: 15px 30px; /* Increase padding to make the button bigger */
-    font-size: 18px; /* Increase font size */
+    padding: 2% 5%; /* Adjust padding for responsiveness */
+    font-size: 1em; /* Adjust font size */
     background-color: #AA336A;;
     color: #FFC0CB;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 0 10px;
+    margin: 0 2%; /* Adjust margin for responsiveness */
 }
 
 .button:hover {
@@ -58,7 +57,7 @@ body{
 }
 
 #invitation {
-    font-size: 20px;
+    font-size: 2vw; /* Adjust font size for responsiveness */
     line-height: 1.5;
     text-align: left;
     position: absolute; /* Add relative positioning */
@@ -68,36 +67,10 @@ body{
     width: 25%; 
 }
 
-
-
-
-#invitation p {
-    letter-spacing: 15px; /* Adjust the value to increase or decrease the space between characters */
-}
-
-#invitation p:first-child {
-    letter-spacing: 15px; /* Adjust the value to increase or decrease the space between characters */
-    text-indent: 0px;
-}    
-
-
-#invitation p:nth-child(6) {
-    letter-spacing: 18px; /* Adjust the value to increase or decrease the space between characters */
-    text-indent: 0px;
-}
-
-#invitation p:last-child {
-    letter-spacing: 15px; /* Adjust the value to increase or decrease the space between characters */
-    text-indent: 5px;
-}
-
 #centeredText {
     /* Styles for the centered text */
     text-align: center;
     z-index: 1;
-    padding-top: 130px;
+    padding-top: 10%; /* Adjust padding for responsiveness */
     position: relative;
 }
-
-
-
