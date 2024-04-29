@@ -4,42 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Webpage</title>
-    <style>
-        /* Add your CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        #container {
-            margin-top: 50px;
-        }
-        .gif {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        .button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 0 10px;
-        }
-        .button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <div id="container">
-        <h1>Welcome to My Simple Webpage</h1>
-        <img class="gif" src="example.gif" alt="Example Gif">
-        <p>This is some example text.</p>
-        <button class="button">Button 1</button>
-        <button class="button">Button 2</button>
+    
+
+    
+
+
+    <div id="centeredText">
+        <div id="invitation">
+            <p>┊            ┊       ┊     ┊     ┊         ┊</p>
+            <p>┊            ┊       ┊     ┊     ˚★⋆</p>
+            <p>┊            ┊       ┊     ⋆</p>
+            <p>┊            ┊       ★     ⋆</p>
+            <p>┊            ┊    ◦       ｡˚     ⋆       </p>
+            <p>★            ┊ .       ˚</p>
+            <p>⋆            ★</p>
+        </div>
+        <h1 class="animated-text">ISA GRAD</h1>
+        <div id="details">
+            <h1>estas invitad@ a mi fiesta de graduacion :D</h1>
+            <h1>Cuando: Sabado 11 de Mayo</h1>
+            <h1>Hora: 8:30 pm</h1>
+            <h1>Donde: 5123 Garry Owen</h1>
+            <h2>(tambien estas invitad@ a la ceremonia en el Don Haskins a las 6 el mismo sabado 11 de mayo)</h2>
+            <h2>vibe check: taquitos de discada, pinata, familia, amigos, alcohol, mi playlist ◙▒◙ ♫♩♬ </h2>
+        </div>
+        
+
+        <div id="gifContainer" style="display: none;">
+            <img id="myGif" src="slayCat.gif" alt="Loading GIF">
+        </div>
+
+        <div id="gifContainer2" style="display: none;" >
+            <img id="myGif" src="sadCatGif.gif" alt="Loading GIF">
+        </div>
+        <audio id="slayAudio" src="intentalo-feat-america-sierra-el-bebeto-made-with-Voicemod.mp3"></audio>
+
+        <audio id="sadAudio" src="DONTWASTEURTIMEONME.mp3"></audio>
+
+        <button id="yayButton">Si voy</button>
+        <button id="noButton">No voy t odio</button>
     </div>
+
+
+
+    <script>
+        // JavaScript to play music and display GIF when the button is clicked
+        document.getElementById("yayButton").addEventListener("click", function() {
+            // Display GIF
+            document.getElementById("gifContainer").style.display = "block";
+
+            // Play Music
+            var audio = document.getElementById("slayAudio");
+            audio.play();
+
+            document.getElementById("yayButton").style.display = "none";
+            document.getElementById("noButton").style.display = "none";
+            document.getElementById("details").style.display= "none";
+
+        });
+    </script>
+
+    <script>
+        // JavaScript to play music and display GIF when the button is clicked
+        document.getElementById("noButton").addEventListener("click", function() {
+            // Display GIF
+            document.getElementById("gifContainer2").style.display = "block";
+
+            // Play Music
+            var audio = document.getElementById("sadAudio");
+            audio.currentTime = 170;
+            audio.play();
+
+            document.getElementById("yayButton").style.display = "none";
+            document.getElementById("noButton").style.display = "none";
+            document.getElementById("details").style.display= "none";
+        });
+    </script>
 </body>
 </html>

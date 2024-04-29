@@ -1,0 +1,103 @@
+body{ 
+    background-image: url('borboletas-butterfly\ \(2\).gif');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    font-family: Arial, sans-serif; /* Default font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+#container {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: center; /*Distribute items evenly along the main axis*/
+    height: 100vh;
+}
+
+
+.animated-text {
+    color:#AA336A; /* Pink text color */
+    font-family: 'Comic Sans MS', cursive; /* Playful font */
+    font-size: 3em; /* Large font size */
+    animation: bounceText 1s infinite alternate; /* Animation properties */
+    margin-left: 0px;
+    margin-top: 10px;
+    padding-top: 0px;
+}
+
+@keyframes bounceText {
+    0% {
+        transform: translateY(0); /* Start position */
+    }
+    100% {
+        transform: translateY(-10px); /* End position */
+    }
+}
+
+.gif {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+#yayButton,
+#noButton {
+    padding: 15px 30px; /* Increase padding to make the button bigger */
+    font-size: 18px; /* Increase font size */
+    background-color: #AA336A;;
+    color: #FFC0CB;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+#invitation {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+    position: absolute; /* Add relative positioning */
+    left: 3px;
+    top: -10px;
+    z-index: 2; 
+    width: 25%; 
+}
+
+
+
+
+#invitation p {
+    letter-spacing: 15px; /* Adjust the value to increase or decrease the space between characters */
+}
+
+#invitation p:first-child {
+    letter-spacing: 15px; /* Adjust the value to increase or decrease the space between characters */
+    text-indent: 0px;
+}    
+
+
+#invitation p:nth-child(6) {
+    letter-spacing: 18px; /* Adjust the value to increase or decrease the space between characters */
+    text-indent: 0px;
+}
+
+#invitation p:last-child {
+    letter-spacing: 15px; /* Adjust the value to increase or decrease the space between characters */
+    text-indent: 5px;
+}
+
+#centeredText {
+    /* Styles for the centered text */
+    text-align: center;
+    z-index: 1;
+    padding-top: 130px;
+    position: relative;
+}
+
+
+
